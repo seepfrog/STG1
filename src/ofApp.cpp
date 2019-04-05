@@ -1,5 +1,7 @@
 #include "ofApp.h"
 
+std::unique_ptr<STG::Fighter> Dancho(new STG::Fighter);
+
 //--------------------------------------------------------------
 void ofApp::setup(){
 
@@ -7,17 +9,17 @@ void ofApp::setup(){
 
 //--------------------------------------------------------------
 void ofApp::update(){
-
+	Dancho->movePosition();
 }
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-
+	Dancho->drawFighter();
 }
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-
+	Dancho->getKey(key);
 }
 
 //--------------------------------------------------------------

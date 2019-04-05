@@ -1,6 +1,8 @@
 #pragma once
 
 #include "ofMain.h"
+#include <memory>
+#include "../Fighter.h"
 
 class ofApp : public ofBaseApp{
 

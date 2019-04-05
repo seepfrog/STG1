@@ -5,13 +5,20 @@ namespace STG {
 
 	class Fighter {
 	public:
+		Fighter() {};
 		void drawFighter();
-		void getKey(int key);
+		char getKey(int key);
+		void movePosition();
 		void setPositionFighter(double xPos, double yPos);
+		void showStatus();
 	private:
-		double fighterXPosition = 0.0;
-		double fighterYPosition = 0.0;
+		double fighterXPosition = 400.0;
+		double fighterYPosition = 400.0;
+		double hitBoxSize = 10.0;
+		double hitPoint = 100;
+		char moveDirection = ' ';
 	};
 
 }
+
 
